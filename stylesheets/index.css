@@ -1,0 +1,61 @@
+.brand-logo {
+    font-family: cursive;
+}
+#nav-mobile {
+    font-family: cursive;
+}
+.navbar {
+    color: black;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+body {
+    background-image: url("theglobe.png");
+    background-attachment: fixed;
+}
+
+#shakesBtn {
+    background-image: url("shakes2.png");
+    background-size: cover;
+    border: black;
+    top:38%;
+    left:7%;
+    background-color: black;
+    position: absolute;
+    border-radius: 50%;
+}
+
+#translateButton {
+    top:70%;
+    left:45%;
+    width:150px;
+    height:60px;
+    position: absolute;
+    z-index: 2;
+    background: rgb(0, 110, 110); 
+    color: white;
+    font-family: cursive;
+    font-size: 30px;
+    }
+
+ #inputTxt {
+    top:70%;
+    left:15%;
+    width:300px;
+    height:60px;
+    position: absolute;
+    background: white; 
+    color: black;
+    font-family: cursive;
+    font-size: 30px;
+ }   
+
+ ::placeholder {
+     text-align: center;
+    
+ }
+
+ input:focus{
+     outline-color: rgb(0, 110, 110);
+ }
