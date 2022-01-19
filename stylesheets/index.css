@@ -1,6 +1,9 @@
-.brand-logo {
+body {
+    background-image: url('../theglobe.png');
+    background-attachment: fixed;
     font-family: cursive;
 }
+
 #nav-mobile {
     font-family: cursive;
 }
@@ -10,14 +13,11 @@
     top: 0;
     width: 100%;
 }
-body {
-    background-image: url("theglobe.png");
-    background-attachment: fixed;
+.shakes-container {
+    top: 100%;
 }
-
 #shakesBtn {
-    background-image: url("shakes2.png");
-    background-size: cover;
+    background-image: url('../shakes2.png');
     border: black;
     top:38%;
     left:7%;

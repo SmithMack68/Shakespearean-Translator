@@ -1,11 +1,11 @@
 
 
 
-const changeBackgroundImage = () => document.body.style.backgroundImage = "url('theglobe.png')"
+// const changeBackgroundImage = () => document.body.style.backgroundImage = "url('theglobe.png')"
 
 
 
-//** Global Variables **/
+//** Global Variables **//
 let userInputTxt = document.querySelector('#inputTxt');
 const translateButton = document.querySelector('#translateButton');
 //let userOutputTxt = document.querySelector("")
@@ -27,6 +27,12 @@ const insultButton = document.querySelector('#shakesBtn');
 
 
 //** Code **/
+// document.addEventListener('DOMContentLoaded', function() {
+//     var elems = document.querySelectorAll('.collapsible');
+//     var instances = M.Collapsible.init(elems, options);
+//   });
+
+
 function retrieveTranslation(inputValue){
 
     return translatedData
@@ -41,9 +47,7 @@ function handleTranslate(e){
 
 translateButton.addEventListener('click', handleTranslate);
 //** On DOMLOAD  **/
-document.addEventListener('DOMContentLoaded', () =>{
-    changeBackgroundImage()
-})
+
 // fetch("https://shakespeare1.p.rapidapi.com/shakespeare/translate?text=%3CREQUIRED%3E", {
 // 	"method": "GET",
 // 	"headers": {
@@ -71,3 +75,6 @@ document.addEventListener('DOMContentLoaded', () =>{
 // .catch(err => {
 // 	console.error(err);
 // });
+
+
+//`${url}?text=${inputTxt}`

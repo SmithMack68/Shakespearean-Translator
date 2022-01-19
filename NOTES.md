@@ -22,3 +22,7 @@ Randomized insult button(stretch)
 * where to start?
     * homepage
     
+
+
+*Save
+<a class="waves-effect waves-light btn-large">Translate</a>
