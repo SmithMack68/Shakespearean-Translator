@@ -17,19 +17,34 @@
         <div class="nav-wrapper container">
           <a href="#" class="brand-logo">Shakespearean Translator</a>
           <ul id="nav-mobile" class="right hide-on-med-and-down">
-            <li><a href="#">About</a></li>
+            <!--<li><a href="#">About</a></li>-->
             <li><a href="collapsible.html">Directions</a></li>
           </ul></li>
         </div>
       </nav>
      <div class="container">
          <div class="shakes-container">
-            <button class="button" id="shakesBtn"><img src="shakes2.png" alt="Shakespeare" style="width:100px; height: 80px; border-radius: 50%"/></button>
+            <button data-target="modal1" class="btn modal-trigger" id="shakesBtn"><img src="shakes2.png" alt="Shakespeare" style="width:100px; height: 80px; border-radius: 50%"/></button>
+            <!-- Modal Trigger -->
+            <!-- Modal Structure -->
+          <div id="modal1" class="modal">
+            <div class="modal-content">
+              <p>Your mother was a hamster and your father smelled of elderberries!</p>
+            </div>
+            <div class="modal-footer">
+              <a href="#!" class="modal-close waves-effect waves-green btn-flat">Dismiss</a>
+            </div>
+          </div>
          </div> 
           <input type="textarea" id="inputTxt" placeholder="insert your text"/>
           <button id="translateButton">Translate</button>
           <input type="textarea" id="outputTxt" placeholder="translation">
      </div>
+     <script>
+        $(document).ready(function(){
+        $('.modal').modal();
+        });
+      </script>
   <script src="javascripts/index.js"></script>  
 </body>
 </html>

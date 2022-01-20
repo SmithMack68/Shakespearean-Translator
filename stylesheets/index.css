@@ -1,7 +1,8 @@
 body {
     background: url('../theglobe.png') no-repeat center fixed;
-   background-size: cover;
+    background-size: cover;
     font-family: cursive;
+    font-size: 30px;
 }
 #nav-mobile {
     font-family: cursive;
@@ -22,8 +23,11 @@ body {
     left:7%;
     background-color: black;
     position: absolute;
-    border-radius: 50%;
+    width: .05px;
+    height: .05px;
+    cursor: grab;
 }
+
 
 #translateButton {
     top:70%;
