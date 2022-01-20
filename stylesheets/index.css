@@ -4,14 +4,17 @@ body {
     font-family: cursive;
     font-size: 30px;
 }
+
 #nav-mobile {
     font-family: cursive;
 }
+
 .collapsible {
     border:black;
     font-size: 22px;
     height: 50px;
 }
+
 .brand-logo {
     cursor: default;
 }
@@ -22,9 +25,11 @@ body {
     top: 0;
     width: 100%;
 }
+
 .shakes-container {
     top: 100%;
 }
+
 #shakesBtn {
     background-image: url('../shakes2.png');
     border: black;

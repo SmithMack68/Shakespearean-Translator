@@ -15,11 +15,26 @@
 <body>
     <nav class="black">
         <div class="nav-wrapper container">
-          <a href="#" class="brand-logo">Shakespearean Translator</a>
+          <a href="#" class="brand-logo">The Shakespearean Translator</a>
           <ul id="nav-mobile" class="right hide-on-med-and-down">
             <!--<li><a href="#">About</a></li>-->
             <li><a href="collapsible.html" class="collapsible">Directions & Info</a></li>
-          </ul></li>
+            <!-- <ul class="collapsible">
+              <li>
+                <div class="collapsible-header">First</div>
+                <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+              </li>
+              <li>
+                <div class="collapsible-header"><Second</div>
+                <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+              </li>
+              <li>
+                <div class="collapsible-header">Third</div>
+                <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+              </li>
+            </ul>
+                   -->
+          </ul>
         </div>
       </nav>
      <div class="container">
@@ -29,7 +44,7 @@
             <!-- Modal Structure -->
           <div id="modal1" class="modal">
             <div class="modal-content">
-              <p>Your mother was a hamster and your father smelled of elderberries!</p>
+              <p>Your mother was a hamster and your father smelled of elderberries</p>
             </div>
             <div class="modal-footer">
               <a href="#!" class="modal-close waves-effect waves-green btn-flat">Dismiss</a>
@@ -41,6 +56,9 @@
           <input type="textarea" id="outputTxt" placeholder="translation">
      </div>
      <script>
+        $(document).ready(function(){
+        $('.collapsible').collapsible();
+        });
         $(document).ready(function(){
         $('.modal').modal();
         });
