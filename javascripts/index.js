@@ -1,7 +1,7 @@
 //** Global Variables **//
 let inputTxt = document.querySelector('#inputTxt');
 let outputTxt = document.querySelector("#outputTxt");
-let returnedInsult = document.querySelector('.modal-content')
+let returnedInsult = document.querySelector('.modal-content p')
 const translateButton = document.querySelector('#translateButton');
 const translateUrl = "https://shakespeare1.p.rapidapi.com/shakespeare/translate?text=%3CREQUIRED%3E";
 const insultUrl = "https://shakespeare1.p.rapidapi.com/shakespeare/generate/insult";
@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 function getInsult(e){
-    fetch("https://shakespeare1.p.rapidapi.com/shakespeare/generate/insult", {
+    fetch("https://shakespeare1.p.rapidapi.com/shakespeare/generate/insult?limit=5", {
     	"method": "GET",
     	"headers": {
     		"x-rapidapi-host": "shakespeare1.p.rapidapi.com",
@@ -24,7 +24,8 @@ function getInsult(e){
     })
     .then(resp => resp.json())
     .then(data => {
-        console.log(data)
+       const taunts = data.contents.taunts
+       returnedInsult.innerText = taunts
         //data.contents.taunts
     })
     // .catch(() => alert("Shakespeare is too busy to insult you, try again later!")

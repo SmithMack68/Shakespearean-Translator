@@ -12,7 +12,7 @@ body {
 .collapsible {
     border:black;
     font-size: 22px;
-    height: 50px;
+  
 }
 
 .brand-logo {
@@ -21,7 +21,6 @@ body {
 
 .navbar {
     color: black;
-    position: fixed;
     top: 0;
     width: 100%;
 }
