@@ -7,6 +7,15 @@ body {
 #nav-mobile {
     font-family: cursive;
 }
+.collapsible {
+    border:black;
+    font-size: 22px;
+    height: 50px;
+}
+.brand-logo {
+    cursor: default;
+}
+
 .navbar {
     color: black;
     position: fixed;
@@ -28,7 +37,6 @@ body {
     cursor: grab;
 }
 
-
 #translateButton {
     top:70%;
     left:45%;
@@ -40,6 +48,7 @@ body {
     color: white;
     font-family: cursive;
     font-size: 30px;
+    cursor: pointer;
     }
 
  #inputTxt {
