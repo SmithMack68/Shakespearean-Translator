@@ -7,19 +7,22 @@ body {
 
 #nav-mobile {
     font-family: cursive;
+    position: relative;
+    background-color: black;
+
 }
 .collapsible-header {
     background-color: black;
     border: black;
-    font-size: 20px;
-    height: 45px;
-    text-align: right;
+    font-size: 19px;
+    height: 47px;
 
 }
 .collapsible {
     border:black;
-    font-size: 18px;
-    background-color: black;
+    font-size: 19px;
+    background-color: rgb(24, 23, 23);
+    color: rgb(247, 240, 231);
 }
 
 .brand-logo {
@@ -30,6 +33,10 @@ body {
     color: black;
     top: 0;
 }
+
+/* .translate-container {
+    display: none;
+} */
 
 .shakes-container {
     top: 100%;

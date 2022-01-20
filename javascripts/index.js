@@ -27,7 +27,6 @@ function getInsult(e){
        const taunts = data.contents.taunts
        const index = Math.floor(Math.random()* taunts.length)
        returnedInsult.innerText = taunts[index]
-        //data.contents.taunts
     })
   .catch(() => alert("Shakespeare is too busy to insult you, try again later!"))
    }
