@@ -16,24 +16,23 @@
     <nav class="black">
         <div class="nav-wrapper container">
           <a href="#" class="brand-logo">The Shakespearean Translator</a>
-          <ul id="nav-mobile" class="right hide-on-med-and-down">
+          <ul id="nav-mobile" class="collapsible right hide-on-med-and-down">
             <!--<li><a href="#">About</a></li>-->
-            <li><a href="collapsible.html" class="collapsible">Directions & Info</a></li>
-            <ul class="collapsible">
+            <!-- <ul class="collapsible"> -->
+        <div class="collapsible">   
               <li>
-                <div class="collapsible-header">First</div>
+                <a href="#" class="collapsible-header">Directions</a>
                 <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
               </li>
               <li>
-                <div class="collapsible-header"><Second</div>
-                <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
-              </li>
+                <a href="#" class="collapsible-header">Info</a>
+                <div class="collapsible-body"><span>William Shakespeare  (26 April 1564, 23 April 1616) was an English playwright, poet and actor, widely regarded as the greatest writer in the English language and the world's greatest dramatist. Born in Stratford-upon-Avon, and sometimes referred to as "The Bard", his works, include 39 plays, 154 sonnets, three narrative poems. He still reaches audiences today due to his unbelievable understanding of human nature and undeniable wit.                </span></div>
+              </li>  
               <li>
-                <div class="collapsible-header">Third</div>
+                <a href="#" class="collapsible-header">Sources</a>
                 <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
-              </li>
-            </ul>
-                  
+              </li> 
+        </div>    
           </ul>
         </div>
       </nav>
@@ -55,14 +54,10 @@
           <button id="translateButton">Translate</button>
           <input type="textarea" id="outputTxt" placeholder="translation">
      </div>
-     <script>
-        $(document).ready(function(){
-        $('.collapsible').collapsible();
-        });
-      </script>
       <script>
         $(document).ready(function(){
-        $('.modal').modal();
+        $('.modal').modal(); 
+        $('.collapsible').collapsible();
         });
       </script>
   <script src="javascripts/index.js"></script>  

@@ -25,11 +25,11 @@ function getInsult(e){
     .then(resp => resp.json())
     .then(data => {
        const taunts = data.contents.taunts
-       returnedInsult.innerText = taunts
+       const index = Math.floor(Math.random()* taunts.length)
+       returnedInsult.innerText = taunts[index]
         //data.contents.taunts
     })
-    // .catch(() => alert("Shakespeare is too busy to insult you, try again later!")
-    // );
+  .catch(() => alert("Shakespeare is too busy to insult you, try again later!"))
    }
     
 function handleTranslate(e){
