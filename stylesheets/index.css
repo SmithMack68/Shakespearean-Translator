@@ -99,3 +99,9 @@ body {
  input:focus{
      outline-color: rgb(0, 110, 110);
  }
+
+/* .hidden {
+    visibility: hidden;
+    visibility: visible;
+} */
+ 

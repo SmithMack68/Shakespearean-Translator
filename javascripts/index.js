@@ -6,14 +6,25 @@ const translateButton = document.querySelector('#translateButton');
 const translateUrl = "https://shakespeare1.p.rapidapi.com/shakespeare/translate?text=%3CREQUIRED%3E";
 const insultUrl = "https://shakespeare1.p.rapidapi.com/shakespeare/generate/insult";
 const insultButton = document.querySelector('#shakesBtn');
+const translateContainer = document.querySelector(".translate-container")
+const collapsibleHeader = document.querySelector('.collapsible')
 
-
+//** Event Listeners**//
 document.addEventListener('DOMContentLoaded', () => {
     translateButton.addEventListener('click', handleTranslate)
     insultButton.addEventListener('click', getInsult)
+    collapsibleHeader.addEventListener('click', hideTranslateContainer)
 })
 
-
+//**Functions **//
+  function hideTranslateContainer(){
+  if (translateContainer.style.display !== "none") {
+    translateContainer.style.display = "none"
+  } else {
+    translateContainer.style.display = "block"
+  }
+}
+  
 function getInsult(e){
     fetch("https://shakespeare1.p.rapidapi.com/shakespeare/generate/insult?limit=5", {
     	"method": "GET",
