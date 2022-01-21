@@ -24,7 +24,8 @@ document.addEventListener('DOMContentLoaded', () => {
     translateContainer.style.display = "block"
   }
 }
-  
+//translateContainer.reset()
+
 function getInsult(e){
     fetch("https://shakespeare1.p.rapidapi.com/shakespeare/generate/insult?limit=5", {
     	"method": "GET",

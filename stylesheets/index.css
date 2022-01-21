@@ -9,34 +9,35 @@ body {
     font-family: cursive;
     position: relative;
     background-color: black;
+    color: rgb(247, 240, 231);
 
 }
 .collapsible-header {
     background-color: black;
     border: black;
-    font-size: 19px;
+    font-size: 22px;
     height: 47px;
-
-}
-.collapsible {
-    border:black;
-    font-size: 19px;
-    background-color: rgb(24, 23, 23);
     color: rgb(247, 240, 231);
 }
 
+.collapsible {
+    border:black;
+    font-size: 20px;
+    background-color: rgb(24, 23, 23);
+    color: rgb(247, 240, 231);
+    margin-top: auto;
+}
+
 .brand-logo {
+    color: blue;
     cursor: default;
+    
 }
 
 .navbar {
     color: black;
     top: 0;
 }
-
-/* .translate-container {
-    display: none;
-} */
 
 .shakes-container {
     top: 100%;
@@ -99,9 +100,3 @@ body {
  input:focus{
      outline-color: rgb(0, 110, 110);
  }
-
-/* .hidden {
-    visibility: hidden;
-    visibility: visible;
-} */
- 
