@@ -8,35 +8,13 @@ const insultUrl = "https://shakespeare1.p.rapidapi.com/shakespeare/generate/insu
 const insultButton = document.querySelector('#shakesBtn');
 const translateContainer = document.querySelector(".translate-container")
 const collapsibleHeader = document.querySelector('.collapsible')
-//const collapsibleInfo = document.getElementById("info")
 
 //** Event Listeners**//
 document.addEventListener('DOMContentLoaded', () => {
     translateButton.addEventListener('click', handleTranslate)
     insultButton.addEventListener('click', getInsult)
-    collapsibleHeader.addEventListener('click', hideTranslateContainer)
-    //collapsibleInfo.addEventListener('click', hideTranslateContainer)
 })
-
-//**Functions **//
-
-  function hideTranslateContainer(){
-      if (translateContainer.style.display !== "none") {
-        translateContainer.style.display = "none"
-      } else {
-        translateContainer.style.display = "block"
-      }
-    }
-  //    if (collapsibleHeader.style.display = "block") {
-  //     translateContainer.style.display = "none"
-  //   }  if (translateContainer.style.display !== "none"){ 
-  //             translateContainer.style.display = "block"
-  //   } else {
-  //           collapsibleHeader.style.display = "block"
-  //           translateContainer.style.display ="block"
-  //   }
-  // }  
-
+//**Fetches**/
 function getInsult(e){
     fetch("https://shakespeare1.p.rapidapi.com/shakespeare/generate/insult?limit=5", {
     	"method": "GET",
