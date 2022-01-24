@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', () => {
     insultButton.addEventListener('click', getInsult)
 })
 //**Fetches**/
-function getInsult(e){
+function getInsult(){
     fetch("https://shakespeare1.p.rapidapi.com/shakespeare/generate/insult?limit=5", {
     	"method": "GET",
     	"headers": {
@@ -30,7 +30,7 @@ function getInsult(e){
   .catch(() => alert("Shakespeare is too busy to insult you, try again later!"))
    }
     
-function handleTranslate(e){
+function handleTranslate(){
   fetch(`https://shakespeare1.p.rapidapi.com/shakespeare/translate?text=${inputTxt.value}`, {
 	"method": "GET",
 	"headers": {
