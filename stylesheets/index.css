@@ -47,8 +47,8 @@ body {
 #shakesBtn {
     background-image: url('../shakes2.png');
     border: black;
-    top:38%;
-    left:4%;
+    top:37%;
+    left:6%;
     background-color: black;
     position: absolute;
     width: .05px;
@@ -73,7 +73,7 @@ body {
  #inputTxt {
     top:70%;
     left:15%;
-    width:300px;
+    width:350px;
     height:60px;
     position: absolute;
     background: white; 
@@ -85,7 +85,7 @@ body {
  #outputTxt {
      top: 70%;
      right: 14%;
-     width:300px;
+     width:350px;
      height:60px;
      position: absolute;
      background: white; 
