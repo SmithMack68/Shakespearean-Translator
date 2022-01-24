@@ -23,8 +23,8 @@ A collapsible dropdown menu on the navigation bar with directions, information a
 4. Click on the Shakespeare image
 5. And a random insult will appear
 6. Click dismiss and the insult will disappear
-7. If you have typed in a very long sentance, 
-use the forward and backlwards arrows to scroll through all the text.
+7. If you have typed in very long text, 
+use the forward arrow to scroll through the translation.
 
 
 
