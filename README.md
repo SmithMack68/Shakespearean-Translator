@@ -25,9 +25,12 @@ A collapsible dropdown menu on the navigation bar with directions, information a
 6. Click dismiss and the insult will disappear
 7. If you have typed in very long text, 
 use the forward arrow to scroll through the translation.
+-----
+## Demo Video
 
-
-
+[![Shakespeare Thames London](https://img.youtube.com/vi/8yCF1piRQa0/0.jpg)](https://www.youtube.com/watch?v=8yCF1piRQa0)
+------
+Click the video link and it will redirect you to the YouTube demo. **Note it will take you away from GitHub.
 
 -------------------
 >**Information**
